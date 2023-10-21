@@ -6,9 +6,8 @@
 //
 
 import Foundation
-import Foundation
 import Alamofire
-
+import MTEntities
 
 protocol MovieListUseCaseType {
     func getMovieDetails(params: [String: Any], completion: @escaping((Result<MovieListResponse, Error>)) -> Void)
