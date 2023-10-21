@@ -35,6 +35,15 @@
 		0788E16B2AE31E84008A5E27 /* MovieEndPoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0788E16A2AE31E84008A5E27 /* MovieEndPoint.swift */; };
 		0788E16D2AE31F36008A5E27 /* MovieDetailsUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0788E16C2AE31F35008A5E27 /* MovieDetailsUseCase.swift */; };
 		0788E16F2AE3207A008A5E27 /* MovieListUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0788E16E2AE3207A008A5E27 /* MovieListUseCase.swift */; };
+		0788E1712AE3232B008A5E27 /* MovieListResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0788E1702AE3232B008A5E27 /* MovieListResponse.swift */; };
+		0788E1732AE32384008A5E27 /* MovieDetailResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0788E1722AE32384008A5E27 /* MovieDetailResponse.swift */; };
+		0788E1752AE323DE008A5E27 /* Movie.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0788E1742AE323DE008A5E27 /* Movie.swift */; };
+		0788E17A2AE32742008A5E27 /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = 0788E1792AE32742008A5E27 /* Alamofire */; };
+		0788E17B2AE32756008A5E27 /* MTCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0788E0F92AE3138F008A5E27 /* MTCore.framework */; };
+		0788E17E2AE3288A008A5E27 /* MTEntities.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0788E11B2AE313EA008A5E27 /* MTEntities.framework */; };
+		0788E17F2AE3288A008A5E27 /* MTEntities.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 0788E11B2AE313EA008A5E27 /* MTEntities.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		0788E1832AE3288E008A5E27 /* MTCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0788E0F92AE3138F008A5E27 /* MTCore.framework */; };
+		0788E1842AE3288E008A5E27 /* MTCore.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 0788E0F92AE3138F008A5E27 /* MTCore.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -65,6 +74,27 @@
 			proxyType = 1;
 			remoteGlobalIDString = 0788E13C2AE31406008A5E27;
 			remoteInfo = MTComponents;
+		};
+		0788E17C2AE32756008A5E27 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 0788E09A2AE30AA9008A5E27 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 0788E0F82AE3138F008A5E27;
+			remoteInfo = MTCore;
+		};
+		0788E1802AE3288A008A5E27 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 0788E09A2AE30AA9008A5E27 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 0788E11A2AE313EA008A5E27;
+			remoteInfo = MTEntities;
+		};
+		0788E1852AE3288E008A5E27 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 0788E09A2AE30AA9008A5E27 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 0788E0F82AE3138F008A5E27;
+			remoteInfo = MTCore;
 		};
 /* End PBXContainerItemProxy section */
 
@@ -110,6 +140,9 @@
 		0788E16A2AE31E84008A5E27 /* MovieEndPoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieEndPoint.swift; sourceTree = "<group>"; };
 		0788E16C2AE31F35008A5E27 /* MovieDetailsUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieDetailsUseCase.swift; sourceTree = "<group>"; };
 		0788E16E2AE3207A008A5E27 /* MovieListUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieListUseCase.swift; sourceTree = "<group>"; };
+		0788E1702AE3232B008A5E27 /* MovieListResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieListResponse.swift; sourceTree = "<group>"; };
+		0788E1722AE32384008A5E27 /* MovieDetailResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieDetailResponse.swift; sourceTree = "<group>"; };
+		0788E1742AE323DE008A5E27 /* Movie.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Movie.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -117,9 +150,11 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0788E17A2AE32742008A5E27 /* Alamofire in Frameworks */,
 				0788E10E2AE3138F008A5E27 /* MTCore.framework in Frameworks */,
 				0788E1522AE31407008A5E27 /* MTComponents.framework in Frameworks */,
 				0788E1302AE313EB008A5E27 /* MTEntities.framework in Frameworks */,
+				0788E17B2AE32756008A5E27 /* MTCore.framework in Frameworks */,
 				0788E0EB2AE31355008A5E27 /* MTNetwork.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -128,6 +163,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0788E17E2AE3288A008A5E27 /* MTEntities.framework in Frameworks */,
+				0788E1832AE3288E008A5E27 /* MTCore.framework in Frameworks */,
 				0788E1632AE31C60008A5E27 /* Alamofire in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -226,6 +263,9 @@
 			children = (
 				0788E11D2AE313EA008A5E27 /* MTEntities.h */,
 				0788E11E2AE313EA008A5E27 /* MTEntities.docc */,
+				0788E1702AE3232B008A5E27 /* MovieListResponse.swift */,
+				0788E1722AE32384008A5E27 /* MovieDetailResponse.swift */,
+				0788E1742AE323DE008A5E27 /* Movie.swift */,
 			);
 			path = MTEntities;
 			sourceTree = "<group>";
@@ -320,8 +360,12 @@
 				0788E10D2AE3138F008A5E27 /* PBXTargetDependency */,
 				0788E12F2AE313EB008A5E27 /* PBXTargetDependency */,
 				0788E1512AE31407008A5E27 /* PBXTargetDependency */,
+				0788E17D2AE32756008A5E27 /* PBXTargetDependency */,
 			);
 			name = MovieTip;
+			packageProductDependencies = (
+				0788E1792AE32742008A5E27 /* Alamofire */,
+			);
 			productName = MovieTip;
 			productReference = 0788E0A22AE30AA9008A5E27 /* MovieTip.app */;
 			productType = "com.apple.product-type.application";
@@ -334,10 +378,13 @@
 				0788E0D22AE31355008A5E27 /* Sources */,
 				0788E0D32AE31355008A5E27 /* Frameworks */,
 				0788E0D42AE31355008A5E27 /* Resources */,
+				0788E1822AE3288A008A5E27 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				0788E1812AE3288A008A5E27 /* PBXTargetDependency */,
+				0788E1862AE3288E008A5E27 /* PBXTargetDependency */,
 			);
 			name = MTNetwork;
 			packageProductDependencies = (
@@ -533,6 +580,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				0788E11F2AE313EA008A5E27 /* MTEntities.docc in Sources */,
+				0788E1712AE3232B008A5E27 /* MovieListResponse.swift in Sources */,
+				0788E1752AE323DE008A5E27 /* Movie.swift in Sources */,
+				0788E1732AE32384008A5E27 /* MovieDetailResponse.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -566,6 +616,21 @@
 			isa = PBXTargetDependency;
 			target = 0788E13C2AE31406008A5E27 /* MTComponents */;
 			targetProxy = 0788E1502AE31407008A5E27 /* PBXContainerItemProxy */;
+		};
+		0788E17D2AE32756008A5E27 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 0788E0F82AE3138F008A5E27 /* MTCore */;
+			targetProxy = 0788E17C2AE32756008A5E27 /* PBXContainerItemProxy */;
+		};
+		0788E1812AE3288A008A5E27 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 0788E11A2AE313EA008A5E27 /* MTEntities */;
+			targetProxy = 0788E1802AE3288A008A5E27 /* PBXContainerItemProxy */;
+		};
+		0788E1862AE3288E008A5E27 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 0788E0F82AE3138F008A5E27 /* MTCore */;
+			targetProxy = 0788E1852AE3288E008A5E27 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -697,7 +762,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_ASSET_PATHS = "\"MovieTip/Preview Content\"";
+				DEVELOPMENT_ASSET_PATHS = "\"MTScenes/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
@@ -726,7 +791,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_ASSET_PATHS = "\"MovieTip/Preview Content\"";
+				DEVELOPMENT_ASSET_PATHS = "\"MTScenes/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
@@ -1075,6 +1140,11 @@
 
 /* Begin XCSwiftPackageProductDependency section */
 		0788E1622AE31C60008A5E27 /* Alamofire */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 0788E1612AE31C54008A5E27 /* XCRemoteSwiftPackageReference "Alamofire" */;
+			productName = Alamofire;
+		};
+		0788E1792AE32742008A5E27 /* Alamofire */ = {
 			isa = XCSwiftPackageProductDependency;
 			package = 0788E1612AE31C54008A5E27 /* XCRemoteSwiftPackageReference "Alamofire" */;
 			productName = Alamofire;
