@@ -8,11 +8,11 @@
 import Foundation
 
 public struct Movie : Codable {
-    let title : String?
-    let year : String?
-    let imdbID : String?
-    let type : String?
-    let poster : String?
+    public let title : String?
+    public let year : String?
+    public let imdbID : String?
+    public let type : String?
+    public let poster : String?
     
     enum CodingKeys: String, CodingKey {
         case title = "Title"

@@ -7,6 +7,7 @@
 
 import SwiftUI
 import SwiftData
+import MTNetwork
 
 @main
 struct MovieTipApp: App {
@@ -25,7 +26,7 @@ struct MovieTipApp: App {
 
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            MovieListView(movieListViewModel: MovieListViewModel(movieListService: MovieListUseCase()))
         }
         .modelContainer(sharedModelContainer)
     }

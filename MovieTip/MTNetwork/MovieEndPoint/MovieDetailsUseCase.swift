@@ -10,18 +10,18 @@ import MTEntities
 import Alamofire
 
 
-protocol MovieDetailsUseCaseType {
+public protocol MovieDetailsUseCaseType {
     func getMovieDetails(params: [String: Any], completion: @escaping((Result<MovieDetailsResponse, Error>)) -> Void)
 }
 
 
-struct MovieDetailsUseCase: MovieDetailsUseCaseType {
+public struct MovieDetailsUseCase: MovieDetailsUseCaseType {
     
     public init() {
         
     }
     
-    func getMovieDetails(params: [String : Any], completion: @escaping((Result<MovieDetailsResponse, Error>)) -> Void) {
+    public  func getMovieDetails(params: [String : Any], completion: @escaping((Result<MovieDetailsResponse, Error>)) -> Void) {
         return BaseService.request( MovieEndPoint.movieDetails(params: params), completion: completion)
     }
 }
