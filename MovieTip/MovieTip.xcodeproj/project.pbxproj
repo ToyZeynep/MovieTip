@@ -7,6 +7,17 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0758CF4C2AE3F2F40033CE4B /* MTComponent.docc in Sources */ = {isa = PBXBuildFile; fileRef = 0758CF4B2AE3F2F40033CE4B /* MTComponent.docc */; };
+		0758CF522AE3F2F50033CE4B /* MTComponent.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0758CF482AE3F2F40033CE4B /* MTComponent.framework */; };
+		0758CF5A2AE3F2F50033CE4B /* MTComponent.h in Headers */ = {isa = PBXBuildFile; fileRef = 0758CF4A2AE3F2F40033CE4B /* MTComponent.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		0758CF5D2AE3F2F50033CE4B /* MTComponent.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0758CF482AE3F2F40033CE4B /* MTComponent.framework */; };
+		0758CF5E2AE3F2F50033CE4B /* MTComponent.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 0758CF482AE3F2F40033CE4B /* MTComponent.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		0758CF662AE3F31A0033CE4B /* ImageFromURL.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0758CF652AE3F31A0033CE4B /* ImageFromURL.swift */; };
+		0758CF6A2AE3F4F80033CE4B /* Kingfisher in Frameworks */ = {isa = PBXBuildFile; productRef = 0758CF692AE3F4F80033CE4B /* Kingfisher */; };
+		0758CF6B2AE3F5040033CE4B /* MTCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0788E0F92AE3138F008A5E27 /* MTCore.framework */; };
+		0758CF6D2AE3F5120033CE4B /* Kingfisher in Frameworks */ = {isa = PBXBuildFile; productRef = 0758CF6C2AE3F5120033CE4B /* Kingfisher */; };
+		077AF2302AE3D6D30044B092 /* MovieListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 077AF22F2AE3D6D30044B092 /* MovieListViewModel.swift */; };
+		077AF2342AE3D7710044B092 /* MovieListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 077AF2332AE3D7710044B092 /* MovieListView.swift */; };
 		0788E0A62AE30AA9008A5E27 /* MovieTipApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0788E0A52AE30AA9008A5E27 /* MovieTipApp.swift */; };
 		0788E0A82AE30AA9008A5E27 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0788E0A72AE30AA9008A5E27 /* ContentView.swift */; };
 		0788E0AA2AE30AA9008A5E27 /* Item.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0788E0A92AE30AA9008A5E27 /* Item.swift */; };
@@ -24,10 +35,6 @@
 		0788E12D2AE313EB008A5E27 /* MTEntities.h in Headers */ = {isa = PBXBuildFile; fileRef = 0788E11D2AE313EA008A5E27 /* MTEntities.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		0788E1302AE313EB008A5E27 /* MTEntities.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0788E11B2AE313EA008A5E27 /* MTEntities.framework */; };
 		0788E1312AE313EB008A5E27 /* MTEntities.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 0788E11B2AE313EA008A5E27 /* MTEntities.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		0788E1412AE31406008A5E27 /* MTComponents.docc in Sources */ = {isa = PBXBuildFile; fileRef = 0788E1402AE31406008A5E27 /* MTComponents.docc */; };
-		0788E14F2AE31407008A5E27 /* MTComponents.h in Headers */ = {isa = PBXBuildFile; fileRef = 0788E13F2AE31406008A5E27 /* MTComponents.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		0788E1522AE31407008A5E27 /* MTComponents.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0788E13D2AE31406008A5E27 /* MTComponents.framework */; };
-		0788E1532AE31407008A5E27 /* MTComponents.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 0788E13D2AE31406008A5E27 /* MTComponents.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		0788E15D2AE31B21008A5E27 /* BaseRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0788E15C2AE31B21008A5E27 /* BaseRequest.swift */; };
 		0788E1632AE31C60008A5E27 /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = 0788E1622AE31C60008A5E27 /* Alamofire */; };
 		0788E1662AE31CC8008A5E27 /* BaseService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0788E1652AE31CC8008A5E27 /* BaseService.swift */; };
@@ -47,6 +54,27 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
+		0758CF532AE3F2F50033CE4B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 0788E09A2AE30AA9008A5E27 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 0758CF472AE3F2F40033CE4B;
+			remoteInfo = MTComponent;
+		};
+		0758CF552AE3F2F50033CE4B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 0788E09A2AE30AA9008A5E27 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 0788E0A12AE30AA9008A5E27;
+			remoteInfo = MovieTip;
+		};
+		0758CF5B2AE3F2F50033CE4B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 0788E09A2AE30AA9008A5E27 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 0758CF472AE3F2F40033CE4B;
+			remoteInfo = MTComponent;
+		};
 		0788E0E92AE31355008A5E27 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 0788E09A2AE30AA9008A5E27 /* Project object */;
@@ -67,13 +95,6 @@
 			proxyType = 1;
 			remoteGlobalIDString = 0788E11A2AE313EA008A5E27;
 			remoteInfo = MTEntities;
-		};
-		0788E1502AE31407008A5E27 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 0788E09A2AE30AA9008A5E27 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 0788E13C2AE31406008A5E27;
-			remoteInfo = MTComponents;
 		};
 		0788E17C2AE32756008A5E27 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -106,9 +127,21 @@
 			dstSubfolderSpec = 10;
 			files = (
 				0788E10F2AE3138F008A5E27 /* MTCore.framework in Embed Frameworks */,
-				0788E1532AE31407008A5E27 /* MTComponents.framework in Embed Frameworks */,
 				0788E1312AE313EB008A5E27 /* MTEntities.framework in Embed Frameworks */,
 				0788E0EC2AE31355008A5E27 /* MTNetwork.framework in Embed Frameworks */,
+				0758CF5E2AE3F2F50033CE4B /* MTComponent.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0788E1822AE3288A008A5E27 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				0788E1842AE3288E008A5E27 /* MTCore.framework in Embed Frameworks */,
+				0788E17F2AE3288A008A5E27 /* MTEntities.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -116,6 +149,13 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		0758CF482AE3F2F40033CE4B /* MTComponent.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = MTComponent.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		0758CF4A2AE3F2F40033CE4B /* MTComponent.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MTComponent.h; sourceTree = "<group>"; };
+		0758CF4B2AE3F2F40033CE4B /* MTComponent.docc */ = {isa = PBXFileReference; lastKnownFileType = folder.documentationcatalog; path = MTComponent.docc; sourceTree = "<group>"; };
+		0758CF512AE3F2F40033CE4B /* MTComponentTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MTComponentTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		0758CF652AE3F31A0033CE4B /* ImageFromURL.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageFromURL.swift; sourceTree = "<group>"; };
+		077AF22F2AE3D6D30044B092 /* MovieListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieListViewModel.swift; sourceTree = "<group>"; };
+		077AF2332AE3D7710044B092 /* MovieListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieListView.swift; sourceTree = "<group>"; };
 		0788E0A22AE30AA9008A5E27 /* MovieTip.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MovieTip.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0788E0A52AE30AA9008A5E27 /* MovieTipApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieTipApp.swift; sourceTree = "<group>"; };
 		0788E0A72AE30AA9008A5E27 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -131,9 +171,6 @@
 		0788E11B2AE313EA008A5E27 /* MTEntities.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = MTEntities.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		0788E11D2AE313EA008A5E27 /* MTEntities.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MTEntities.h; sourceTree = "<group>"; };
 		0788E11E2AE313EA008A5E27 /* MTEntities.docc */ = {isa = PBXFileReference; lastKnownFileType = folder.documentationcatalog; path = MTEntities.docc; sourceTree = "<group>"; };
-		0788E13D2AE31406008A5E27 /* MTComponents.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = MTComponents.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		0788E13F2AE31406008A5E27 /* MTComponents.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MTComponents.h; sourceTree = "<group>"; };
-		0788E1402AE31406008A5E27 /* MTComponents.docc */ = {isa = PBXFileReference; lastKnownFileType = folder.documentationcatalog; path = MTComponents.docc; sourceTree = "<group>"; };
 		0788E15C2AE31B21008A5E27 /* BaseRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseRequest.swift; sourceTree = "<group>"; };
 		0788E1652AE31CC8008A5E27 /* BaseService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseService.swift; sourceTree = "<group>"; };
 		0788E1672AE31CEC008A5E27 /* ServiceConstant.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServiceConstant.swift; sourceTree = "<group>"; };
@@ -146,13 +183,31 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		0758CF452AE3F2F40033CE4B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0758CF6B2AE3F5040033CE4B /* MTCore.framework in Frameworks */,
+				0758CF6A2AE3F4F80033CE4B /* Kingfisher in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0758CF4E2AE3F2F40033CE4B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0758CF522AE3F2F50033CE4B /* MTComponent.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		0788E09F2AE30AA9008A5E27 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				0788E17A2AE32742008A5E27 /* Alamofire in Frameworks */,
 				0788E10E2AE3138F008A5E27 /* MTCore.framework in Frameworks */,
-				0788E1522AE31407008A5E27 /* MTComponents.framework in Frameworks */,
+				0758CF6D2AE3F5120033CE4B /* Kingfisher in Frameworks */,
+				0758CF5D2AE3F2F50033CE4B /* MTComponent.framework in Frameworks */,
 				0788E1302AE313EB008A5E27 /* MTEntities.framework in Frameworks */,
 				0788E17B2AE32756008A5E27 /* MTCore.framework in Frameworks */,
 				0788E0EB2AE31355008A5E27 /* MTNetwork.framework in Frameworks */,
@@ -183,16 +238,39 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		0788E13A2AE31406008A5E27 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0758CF422AE3E4EB0033CE4B /* SupportingFiles */ = {
+			isa = PBXGroup;
+			children = (
+				0788E0AB2AE30AAB008A5E27 /* Assets.xcassets */,
+				0788E0A92AE30AA9008A5E27 /* Item.swift */,
+				0788E0A72AE30AA9008A5E27 /* ContentView.swift */,
+				0788E0A52AE30AA9008A5E27 /* MovieTipApp.swift */,
+			);
+			path = SupportingFiles;
+			sourceTree = "<group>";
+		};
+		0758CF492AE3F2F40033CE4B /* MTComponent */ = {
+			isa = PBXGroup;
+			children = (
+				0758CF4A2AE3F2F40033CE4B /* MTComponent.h */,
+				0758CF4B2AE3F2F40033CE4B /* MTComponent.docc */,
+				0758CF652AE3F31A0033CE4B /* ImageFromURL.swift */,
+			);
+			path = MTComponent;
+			sourceTree = "<group>";
+		};
+		077AF22E2AE3D69C0044B092 /* MovieList */ = {
+			isa = PBXGroup;
+			children = (
+				077AF22F2AE3D6D30044B092 /* MovieListViewModel.swift */,
+				077AF2332AE3D7710044B092 /* MovieListView.swift */,
+			);
+			path = MovieList;
+			sourceTree = "<group>";
+		};
 		0788E0992AE30AA9008A5E27 = {
 			isa = PBXGroup;
 			children = (
@@ -200,7 +278,7 @@
 				0788E0D72AE31355008A5E27 /* MTNetwork */,
 				0788E0FA2AE3138F008A5E27 /* MTCore */,
 				0788E11C2AE313EA008A5E27 /* MTEntities */,
-				0788E13E2AE31406008A5E27 /* MTComponents */,
+				0758CF492AE3F2F40033CE4B /* MTComponent */,
 				0788E0A32AE30AA9008A5E27 /* Products */,
 				0788E15E2AE31BD8008A5E27 /* Frameworks */,
 			);
@@ -213,7 +291,8 @@
 				0788E0D62AE31355008A5E27 /* MTNetwork.framework */,
 				0788E0F92AE3138F008A5E27 /* MTCore.framework */,
 				0788E11B2AE313EA008A5E27 /* MTEntities.framework */,
-				0788E13D2AE31406008A5E27 /* MTComponents.framework */,
+				0758CF482AE3F2F40033CE4B /* MTComponent.framework */,
+				0758CF512AE3F2F40033CE4B /* MTComponentTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -221,10 +300,8 @@
 		0788E0A42AE30AA9008A5E27 /* MTScenes */ = {
 			isa = PBXGroup;
 			children = (
-				0788E0A52AE30AA9008A5E27 /* MovieTipApp.swift */,
-				0788E0A72AE30AA9008A5E27 /* ContentView.swift */,
-				0788E0A92AE30AA9008A5E27 /* Item.swift */,
-				0788E0AB2AE30AAB008A5E27 /* Assets.xcassets */,
+				0758CF422AE3E4EB0033CE4B /* SupportingFiles */,
+				077AF22E2AE3D69C0044B092 /* MovieList */,
 				0788E0AD2AE30AAB008A5E27 /* Preview Content */,
 			);
 			path = MTScenes;
@@ -270,15 +347,6 @@
 			path = MTEntities;
 			sourceTree = "<group>";
 		};
-		0788E13E2AE31406008A5E27 /* MTComponents */ = {
-			isa = PBXGroup;
-			children = (
-				0788E13F2AE31406008A5E27 /* MTComponents.h */,
-				0788E1402AE31406008A5E27 /* MTComponents.docc */,
-			);
-			path = MTComponents;
-			sourceTree = "<group>";
-		};
 		0788E15B2AE31AEC008A5E27 /* Base */ = {
 			isa = PBXGroup;
 			children = (
@@ -309,6 +377,14 @@
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
+		0758CF432AE3F2F40033CE4B /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0758CF5A2AE3F2F50033CE4B /* MTComponent.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		0788E0D12AE31355008A5E27 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
@@ -333,17 +409,49 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		0788E1382AE31406008A5E27 /* Headers */ = {
-			isa = PBXHeadersBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				0788E14F2AE31407008A5E27 /* MTComponents.h in Headers */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
+		0758CF472AE3F2F40033CE4B /* MTComponent */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0758CF5F2AE3F2F50033CE4B /* Build configuration list for PBXNativeTarget "MTComponent" */;
+			buildPhases = (
+				0758CF432AE3F2F40033CE4B /* Headers */,
+				0758CF442AE3F2F40033CE4B /* Sources */,
+				0758CF452AE3F2F40033CE4B /* Frameworks */,
+				0758CF462AE3F2F40033CE4B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = MTComponent;
+			packageProductDependencies = (
+				0758CF692AE3F4F80033CE4B /* Kingfisher */,
+			);
+			productName = MTComponent;
+			productReference = 0758CF482AE3F2F40033CE4B /* MTComponent.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		0758CF502AE3F2F40033CE4B /* MTComponentTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0758CF622AE3F2F50033CE4B /* Build configuration list for PBXNativeTarget "MTComponentTests" */;
+			buildPhases = (
+				0758CF4D2AE3F2F40033CE4B /* Sources */,
+				0758CF4E2AE3F2F40033CE4B /* Frameworks */,
+				0758CF4F2AE3F2F40033CE4B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				0758CF542AE3F2F50033CE4B /* PBXTargetDependency */,
+				0758CF562AE3F2F50033CE4B /* PBXTargetDependency */,
+			);
+			name = MTComponentTests;
+			productName = MTComponentTests;
+			productReference = 0758CF512AE3F2F40033CE4B /* MTComponentTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 		0788E0A12AE30AA9008A5E27 /* MovieTip */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 0788E0C82AE30AAB008A5E27 /* Build configuration list for PBXNativeTarget "MovieTip" */;
@@ -359,12 +467,13 @@
 				0788E0EA2AE31355008A5E27 /* PBXTargetDependency */,
 				0788E10D2AE3138F008A5E27 /* PBXTargetDependency */,
 				0788E12F2AE313EB008A5E27 /* PBXTargetDependency */,
-				0788E1512AE31407008A5E27 /* PBXTargetDependency */,
 				0788E17D2AE32756008A5E27 /* PBXTargetDependency */,
+				0758CF5C2AE3F2F50033CE4B /* PBXTargetDependency */,
 			);
 			name = MovieTip;
 			packageProductDependencies = (
 				0788E1792AE32742008A5E27 /* Alamofire */,
+				0758CF6C2AE3F5120033CE4B /* Kingfisher */,
 			);
 			productName = MovieTip;
 			productReference = 0788E0A22AE30AA9008A5E27 /* MovieTip.app */;
@@ -432,24 +541,6 @@
 			productReference = 0788E11B2AE313EA008A5E27 /* MTEntities.framework */;
 			productType = "com.apple.product-type.framework";
 		};
-		0788E13C2AE31406008A5E27 /* MTComponents */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 0788E1542AE31407008A5E27 /* Build configuration list for PBXNativeTarget "MTComponents" */;
-			buildPhases = (
-				0788E1382AE31406008A5E27 /* Headers */,
-				0788E1392AE31406008A5E27 /* Sources */,
-				0788E13A2AE31406008A5E27 /* Frameworks */,
-				0788E13B2AE31406008A5E27 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-			);
-			name = MTComponents;
-			productName = MTComponents;
-			productReference = 0788E13D2AE31406008A5E27 /* MTComponents.framework */;
-			productType = "com.apple.product-type.framework";
-		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -460,6 +551,13 @@
 				LastSwiftUpdateCheck = 1500;
 				LastUpgradeCheck = 1500;
 				TargetAttributes = {
+					0758CF472AE3F2F40033CE4B = {
+						CreatedOnToolsVersion = 15.0;
+					};
+					0758CF502AE3F2F40033CE4B = {
+						CreatedOnToolsVersion = 15.0;
+						TestTargetID = 0788E0A12AE30AA9008A5E27;
+					};
 					0788E0A12AE30AA9008A5E27 = {
 						CreatedOnToolsVersion = 15.0;
 					};
@@ -470,9 +568,6 @@
 						CreatedOnToolsVersion = 15.0;
 					};
 					0788E11A2AE313EA008A5E27 = {
-						CreatedOnToolsVersion = 15.0;
-					};
-					0788E13C2AE31406008A5E27 = {
 						CreatedOnToolsVersion = 15.0;
 					};
 				};
@@ -488,6 +583,7 @@
 			mainGroup = 0788E0992AE30AA9008A5E27;
 			packageReferences = (
 				0788E1612AE31C54008A5E27 /* XCRemoteSwiftPackageReference "Alamofire" */,
+				0758CF682AE3F48E0033CE4B /* XCRemoteSwiftPackageReference "Kingfisher" */,
 			);
 			productRefGroup = 0788E0A32AE30AA9008A5E27 /* Products */;
 			projectDirPath = "";
@@ -497,12 +593,27 @@
 				0788E0D52AE31355008A5E27 /* MTNetwork */,
 				0788E0F82AE3138F008A5E27 /* MTCore */,
 				0788E11A2AE313EA008A5E27 /* MTEntities */,
-				0788E13C2AE31406008A5E27 /* MTComponents */,
+				0758CF472AE3F2F40033CE4B /* MTComponent */,
+				0758CF502AE3F2F40033CE4B /* MTComponentTests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		0758CF462AE3F2F40033CE4B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0758CF4F2AE3F2F40033CE4B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		0788E0A02AE30AA9008A5E27 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -533,16 +644,25 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		0788E13B2AE31406008A5E27 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		0758CF442AE3F2F40033CE4B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0758CF4C2AE3F2F40033CE4B /* MTComponent.docc in Sources */,
+				0758CF662AE3F31A0033CE4B /* ImageFromURL.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0758CF4D2AE3F2F40033CE4B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-/* End PBXResourcesBuildPhase section */
-
-/* Begin PBXSourcesBuildPhase section */
 		0788E09E2AE30AA9008A5E27 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -550,6 +670,8 @@
 				0788E0A82AE30AA9008A5E27 /* ContentView.swift in Sources */,
 				0788E0AA2AE30AA9008A5E27 /* Item.swift in Sources */,
 				0788E0A62AE30AA9008A5E27 /* MovieTipApp.swift in Sources */,
+				077AF2302AE3D6D30044B092 /* MovieListViewModel.swift in Sources */,
+				077AF2342AE3D7710044B092 /* MovieListView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -586,17 +708,24 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		0788E1392AE31406008A5E27 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				0788E1412AE31406008A5E27 /* MTComponents.docc in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
+		0758CF542AE3F2F50033CE4B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 0758CF472AE3F2F40033CE4B /* MTComponent */;
+			targetProxy = 0758CF532AE3F2F50033CE4B /* PBXContainerItemProxy */;
+		};
+		0758CF562AE3F2F50033CE4B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 0788E0A12AE30AA9008A5E27 /* MovieTip */;
+			targetProxy = 0758CF552AE3F2F50033CE4B /* PBXContainerItemProxy */;
+		};
+		0758CF5C2AE3F2F50033CE4B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 0758CF472AE3F2F40033CE4B /* MTComponent */;
+			targetProxy = 0758CF5B2AE3F2F50033CE4B /* PBXContainerItemProxy */;
+		};
 		0788E0EA2AE31355008A5E27 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = 0788E0D52AE31355008A5E27 /* MTNetwork */;
@@ -611,11 +740,6 @@
 			isa = PBXTargetDependency;
 			target = 0788E11A2AE313EA008A5E27 /* MTEntities */;
 			targetProxy = 0788E12E2AE313EB008A5E27 /* PBXContainerItemProxy */;
-		};
-		0788E1512AE31407008A5E27 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 0788E13C2AE31406008A5E27 /* MTComponents */;
-			targetProxy = 0788E1502AE31407008A5E27 /* PBXContainerItemProxy */;
 		};
 		0788E17D2AE32756008A5E27 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
@@ -635,6 +759,106 @@
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
+		0758CF602AE3F2F50033CE4B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = Z6FX84R897;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_MODULE_VERIFIER = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				MODULE_VERIFIER_SUPPORTED_LANGUAGES = "objective-c objective-c++";
+				MODULE_VERIFIER_SUPPORTED_LANGUAGE_STANDARDS = "gnu17 gnu++20";
+				PRODUCT_BUNDLE_IDENTIFIER = com.zeyneptoy.MTComponent;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		0758CF612AE3F2F50033CE4B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = Z6FX84R897;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_MODULE_VERIFIER = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				MODULE_VERIFIER_SUPPORTED_LANGUAGES = "objective-c objective-c++";
+				MODULE_VERIFIER_SUPPORTED_LANGUAGE_STANDARDS = "gnu17 gnu++20";
+				PRODUCT_BUNDLE_IDENTIFIER = com.zeyneptoy.MTComponent;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		0758CF632AE3F2F50033CE4B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.zeyneptoy.MTComponentTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MovieTip.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/MovieTip";
+			};
+			name = Debug;
+		};
+		0758CF642AE3F2F50033CE4B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.zeyneptoy.MTComponentTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MovieTip.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/MovieTip";
+			};
+			name = Release;
+		};
 		0788E0C62AE30AAB008A5E27 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -763,6 +987,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"MTScenes/Preview Content\"";
+				DEVELOPMENT_TEAM = Z6FX84R897;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
@@ -792,6 +1017,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"MTScenes/Preview Content\"";
+				DEVELOPMENT_TEAM = Z6FX84R897;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
@@ -1004,73 +1230,27 @@
 			};
 			name = Release;
 		};
-		0788E1552AE31407008A5E27 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				ENABLE_MODULE_VERIFIER = YES;
-				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_KEY_NSHumanReadableCopyright = "";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				MARKETING_VERSION = 1.0;
-				MODULE_VERIFIER_SUPPORTED_LANGUAGES = "objective-c objective-c++";
-				MODULE_VERIFIER_SUPPORTED_LANGUAGE_STANDARDS = "gnu17 gnu++20";
-				PRODUCT_BUNDLE_IDENTIFIER = com.zeyneptoy.MTComponents;
-				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
-				SKIP_INSTALL = YES;
-				SWIFT_EMIT_LOC_STRINGS = YES;
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
-		};
-		0788E1562AE31407008A5E27 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				ENABLE_MODULE_VERIFIER = YES;
-				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_KEY_NSHumanReadableCopyright = "";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				MARKETING_VERSION = 1.0;
-				MODULE_VERIFIER_SUPPORTED_LANGUAGES = "objective-c objective-c++";
-				MODULE_VERIFIER_SUPPORTED_LANGUAGE_STANDARDS = "gnu17 gnu++20";
-				PRODUCT_BUNDLE_IDENTIFIER = com.zeyneptoy.MTComponents;
-				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
-				SKIP_INSTALL = YES;
-				SWIFT_EMIT_LOC_STRINGS = YES;
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
-		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		0758CF5F2AE3F2F50033CE4B /* Build configuration list for PBXNativeTarget "MTComponent" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0758CF602AE3F2F50033CE4B /* Debug */,
+				0758CF612AE3F2F50033CE4B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		0758CF622AE3F2F50033CE4B /* Build configuration list for PBXNativeTarget "MTComponentTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0758CF632AE3F2F50033CE4B /* Debug */,
+				0758CF642AE3F2F50033CE4B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		0788E09D2AE30AA9008A5E27 /* Build configuration list for PBXProject "MovieTip" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
@@ -1116,18 +1296,17 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		0788E1542AE31407008A5E27 /* Build configuration list for PBXNativeTarget "MTComponents" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				0788E1552AE31407008A5E27 /* Debug */,
-				0788E1562AE31407008A5E27 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
+		0758CF682AE3F48E0033CE4B /* XCRemoteSwiftPackageReference "Kingfisher" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/onevcat/Kingfisher.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 7.9.1;
+			};
+		};
 		0788E1612AE31C54008A5E27 /* XCRemoteSwiftPackageReference "Alamofire" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/Alamofire/Alamofire.git";
@@ -1139,6 +1318,16 @@
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
+		0758CF692AE3F4F80033CE4B /* Kingfisher */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 0758CF682AE3F48E0033CE4B /* XCRemoteSwiftPackageReference "Kingfisher" */;
+			productName = Kingfisher;
+		};
+		0758CF6C2AE3F5120033CE4B /* Kingfisher */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 0758CF682AE3F48E0033CE4B /* XCRemoteSwiftPackageReference "Kingfisher" */;
+			productName = Kingfisher;
+		};
 		0788E1622AE31C60008A5E27 /* Alamofire */ = {
 			isa = XCSwiftPackageProductDependency;
 			package = 0788E1612AE31C54008A5E27 /* XCRemoteSwiftPackageReference "Alamofire" */;
