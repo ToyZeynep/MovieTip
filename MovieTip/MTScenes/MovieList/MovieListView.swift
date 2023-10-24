@@ -15,19 +15,21 @@ struct MovieCard: View {
     var movie: Movie
     
     var body: some View {
-        VStack {
-            ImageFromUrl(url: movie.poster ?? "")
-                .frame(width: 150, height: 230)
-            Text(movie.title ?? "")
-                .font(.system(size: 15, weight: .bold, design: .default))
-                .lineLimit(2)
-                .multilineTextAlignment(.center)
-            Text(movie.year ?? "")
-                .font(.subheadline)
-                .foregroundColor(.gray)
+        NavigationLink(destination: MovieDetailsView(movieDetailsViewModel: MovieDetailsViewModel(omdbId: movie.imdbID, movieDetailsService: MovieDetailsUseCase()))) {
+            VStack {
+                ImageFromUrl(url: movie.poster ?? "")
+                    .frame(width: 150, height: 230)
+                Text(movie.title ?? "")
+                    .font(.system(size: 15, weight: .bold, design: .default))
+                    .lineLimit(2)
+                    .multilineTextAlignment(.center)
+                Text(movie.year ?? "")
+                    .font(.subheadline)
+                    .foregroundColor(.gray)
+            }
+            .frame(width: 150, height: 300)
+            .padding([.leading, .trailing], 10)
         }
-        .frame(width: 150, height: 300)
-        .padding([.leading, .trailing], 10)
     }
 }
 
