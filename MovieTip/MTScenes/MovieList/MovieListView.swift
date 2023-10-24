@@ -17,7 +17,7 @@ struct MovieCard: View {
     var body: some View {
         VStack {
             ImageFromUrl(url: movie.poster ?? "")
-                .frame(width: 100, height: 200)
+                .frame(width: 150, height: 230)
             Text(movie.title ?? "")
                 .font(.system(size: 15, weight: .bold, design: .default))
                 .lineLimit(2)
@@ -26,7 +26,7 @@ struct MovieCard: View {
                 .font(.subheadline)
                 .foregroundColor(.gray)
         }
-        .frame(width: 110, height: 300)
+        .frame(width: 150, height: 300)
         .padding([.leading, .trailing], 10)
     }
 }
