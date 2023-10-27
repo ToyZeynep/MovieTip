@@ -12,17 +12,43 @@ struct SplashView: View {
     @State private var isLinkActive = false
     
     var body: some View {
-        ImageFromUrl(url: "https://media4.giphy.com/media/3o7rc0qU6m5hneMsuc/giphy.gif?cid=ecf05e471bsgy1jalevlrei50bfjytwfj0wynl6sbtbxvm0t&ep=v1_gifs_search&rid=giphy.gif&ct=g")
-            .frame(width: UIScreen.main.bounds.width , height: UIScreen.main.bounds.height)
-        NavigationLink("" ,destination: MovieListView(movieListViewModel: MovieListViewModel(movieListService: MovieListUseCase())) , isActive: $isLinkActive)
-            .onAppear {
-                DispatchQueue.main.asyncAfter(deadline: .now() + 2) {
-                    isLinkActive = true
+        NavigationView {
+            VStack {
+                KingfisherGifView(urlString: "https://i.gifer.com/8V9H.gif")
+                          .frame(width: 200, height: 200)
+                    .onAppear {
+                        DispatchQueue.main.asyncAfter(deadline: .now() + 3) {
+                            isLinkActive = true
+                        }
+                    }
+                NavigationLink(
+                    destination: MovieListView(movieListViewModel: MovieListViewModel(movieListService: MovieListUseCase())),
+                    isActive: $isLinkActive
+                ) {
+                    EmptyView()
                 }
             }
+        }
     }
 }
 
+
 #Preview {
     SplashView()
+}
+
+struct KingfisherGifView: UIViewRepresentable {
+    let urlString: String
+    
+    func makeUIView(context: Context) -> UIImageView {
+        let imageView = UIImageView()
+        imageView.contentMode = .scaleAspectFill
+        return imageView
+    }
+
+    func updateUIView(_ uiView: UIImageView, context: Context) {
+        guard let url = URL(string: urlString) else { return }
+        
+        uiView.kf.setImage(with: url, options: [.cacheOriginalImage])
+    }
 }
