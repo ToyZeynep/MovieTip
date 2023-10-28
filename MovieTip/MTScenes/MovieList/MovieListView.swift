@@ -53,7 +53,7 @@ struct MovieListView: View {
     @ObservedObject var movieListViewModel: MovieListViewModel
     @State var type: String = "movie"
     @State private var searchText = ""
-    
+    @State private var year = ""
     var body: some View {
         NavigationView {
             VStack {
@@ -89,11 +89,24 @@ struct MovieListView: View {
                 
                 .onChange(of: searchText) { newValue in
                     DispatchQueue.main.asyncAfter(deadline: .now() + 1) {
-                        movieListViewModel.getMovieList(searchText: newValue, page: 1 , type: type)
+                        movieListViewModel.getMovieList(searchText: newValue, year: year, page: 1 , type: type)
                     }
                 }
+                
+                .onChange(of: year) { newValue in
+                    DispatchQueue.main.asyncAfter(deadline: .now() + 1) {
+                        movieListViewModel.getMovieList(searchText: newValue, year: year, page: 1 , type: type)
+                    }
+                }
+                
+                .onChange(of: type) { newValue in
+                    DispatchQueue.main.asyncAfter(deadline: .now() + 1) {
+                        movieListViewModel.getMovieList(searchText: newValue, year: year, page: 1 , type: type)
+                    }
+                }
+                
                 .onAppear(){
-                    movieListViewModel.getMovieList(searchText: "ara", page: 1 , type: type)
+                    movieListViewModel.getMovieList(searchText: "love", year: year, page: 1 , type: type)
                 }
             }
         }

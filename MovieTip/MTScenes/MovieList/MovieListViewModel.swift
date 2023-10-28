@@ -21,11 +21,12 @@ final class MovieListViewModel: ObservableObject {
         self.movieListService = movieListService
     }
     
-    public func getMovieList(searchText: String , page: Int , type: String){
+    public func getMovieList(searchText: String , year: String, page: Int , type: String){
         var params: [String: Any] = [String: Any]()
         params["page"] = page
         params["s"] = searchText
         params["type"] = type
+        params["y"] = year
         movieListService.getMovieList(params: params) { [weak self] result in
             switch result {
             case .success(let success):
