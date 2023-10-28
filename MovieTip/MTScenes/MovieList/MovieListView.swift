@@ -136,35 +136,6 @@ struct PickerView: View {
     }
 }
 
-struct ButtonPickerView: View {
-    @State private var showingActionSheet = false
-    @State private var selectedFruit = "Apple"
-    let fruits = ["Apple", "Banana", "Cherry", "Date", "Elderberry"]
-
-    var body: some View {
-        VStack(spacing: 20) {
-            Text("Selected Fruit: \(selectedFruit)")
-
-            Button("Show Picker") {
-                showingActionSheet = true
-            }
-            .actionSheet(isPresented: $showingActionSheet) {
-                ActionSheet(title: Text("Select a fruit"), buttons: fruitButtons())
-            }
-        }
-        .padding()
-    }
-
-    func fruitButtons() -> [ActionSheet.Button] {
-        var buttons: [ActionSheet.Button] = fruits.map { fruit in
-            .default(Text(fruit), action: {
-                selectedFruit = fruit
-            })
-        }
-        buttons.append(.cancel())
-        return buttons
-    }
-}
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
         MovieListView(movieListViewModel: MovieListViewModel(movieListService: MovieListUseCase()))
