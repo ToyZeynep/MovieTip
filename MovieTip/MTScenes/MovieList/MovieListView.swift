@@ -54,21 +54,24 @@ struct MovieListView: View {
     @State var type: String = "movie"
     @State private var searchText = ""
     @State private var year = ""
+    @State private var showingActionSheet = false
+    @State private var yearList:[String] = ["2000" , "2000" ,"2000" ,"2000" ,"2000"]
+    @State private var showingPicker = false
+    
     var body: some View {
         NavigationView {
             VStack {
                 HStack(spacing: 1) {
                     CustomSearchBar(searchText: $searchText)
-                    
                     Button(action: {
-                      
+                        showingPicker = true
                     }) {
                         Image(systemName: "slider.horizontal.3")
                             .padding(.horizontal, 2)
                             .foregroundColor(.gray)
                     }
                     Button(action: {
-                      
+                        showingPicker = true
                     }) {
                         Image(systemName: "arrow.up.arrow.down.square.fill")
                             .padding(.horizontal, 2)
@@ -81,6 +84,7 @@ struct MovieListView: View {
                         if let movieList = movieListViewModel.movieListResponse?.movies {
                             ForEach(0..<(movieList.count), id: \.self) { index in
                                 let movie = movieList[index]
+                                //    yearList.append(movie.year ?? "")
                                 MovieCard(movie: movie)
                             }
                         }
@@ -109,12 +113,58 @@ struct MovieListView: View {
                     movieListViewModel.getMovieList(searchText: "love", year: year, page: 1 , type: type)
                 }
             }
+            .sheet(isPresented: $showingPicker) {
+                PickerView(years: yearList)
+            }
         }
         .navigationBarBackButtonHidden(true)
     }
 }
 
+struct PickerView: View {
+    @State private var selectedYear = ""
+    let years: [String]
 
+    var body: some View {
+        Form {
+            Picker("Select a year", selection: $selectedYear) {
+                ForEach(years, id: \.self) { year in
+                    Text(year).tag(year)
+                }
+            }
+        }
+    }
+}
+
+struct ButtonPickerView: View {
+    @State private var showingActionSheet = false
+    @State private var selectedFruit = "Apple"
+    let fruits = ["Apple", "Banana", "Cherry", "Date", "Elderberry"]
+
+    var body: some View {
+        VStack(spacing: 20) {
+            Text("Selected Fruit: \(selectedFruit)")
+
+            Button("Show Picker") {
+                showingActionSheet = true
+            }
+            .actionSheet(isPresented: $showingActionSheet) {
+                ActionSheet(title: Text("Select a fruit"), buttons: fruitButtons())
+            }
+        }
+        .padding()
+    }
+
+    func fruitButtons() -> [ActionSheet.Button] {
+        var buttons: [ActionSheet.Button] = fruits.map { fruit in
+            .default(Text(fruit), action: {
+                selectedFruit = fruit
+            })
+        }
+        buttons.append(.cancel())
+        return buttons
+    }
+}
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
         MovieListView(movieListViewModel: MovieListViewModel(movieListService: MovieListUseCase()))
