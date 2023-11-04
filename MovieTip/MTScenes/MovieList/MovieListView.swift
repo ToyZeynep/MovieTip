@@ -99,13 +99,13 @@ struct MovieListView: View {
                 
                 .onChange(of: year) { newValue in
                     DispatchQueue.main.asyncAfter(deadline: .now() + 1) {
-                        movieListViewModel.getMovieList(searchText: newValue, year: year, page: 1 , type: type)
+                        movieListViewModel.getMovieList(searchText: searchText, year: year, page: 1 , type: type)
                     }
                 }
                 
                 .onChange(of: type) { newValue in
                     DispatchQueue.main.asyncAfter(deadline: .now() + 1) {
-                        movieListViewModel.getMovieList(searchText: newValue, year: year, page: 1 , type: type)
+                        movieListViewModel.getMovieList(searchText: searchText, year: year, page: 1 , type: newValue)
                     }
                 }
                 
