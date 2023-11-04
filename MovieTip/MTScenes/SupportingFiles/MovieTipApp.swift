@@ -26,7 +26,7 @@ struct MovieTipApp: App {
 
     var body: some Scene {
         WindowGroup {
-            MovieListView(movieListViewModel: MovieListViewModel(movieListService: MovieListUseCase()))
+            SplashView()
         }
         //.modelContainer(sharedModelContainer)
     }
