@@ -33,26 +33,104 @@ struct MovieCard: View {
     }
 }
 
+struct CustomSearchBar: View {
+    @Binding var searchText: String
+    
+    var body: some View {
+        HStack {
+            Image(systemName: "magnifyingglass")
+                .foregroundColor(.gray)
+            
+            TextField("Search movies...", text: $searchText)
+                .textFieldStyle(RoundedBorderTextFieldStyle())
+                .padding(.vertical, 8)
+        }
+        .padding(.horizontal)
+    }
+}
+
 struct MovieListView: View {
     @ObservedObject var movieListViewModel: MovieListViewModel
     @State var type: String = "movie"
+    @State private var searchText = ""
+    @State private var year = ""
+    @State private var showingActionSheet = false
+    @State private var yearList:[String] = ["2000" , "2000" ,"2000" ,"2000" ,"2000"]
+    @State private var showingPicker = false
     
     var body: some View {
         NavigationView {
-            ScrollView {
-                LazyVGrid(columns: [GridItem(.flexible()), GridItem(.flexible())], alignment: .center, spacing: 10) {
-                    if let movieList = movieListViewModel.movieListResponse?.movies {
-                        
-                        ForEach(0..<(movieList.count), id: \.self) { index in
-                            let movie = movieList[index]
-                            MovieCard(movie: movie)
+            VStack {
+                HStack(spacing: 1) {
+                    CustomSearchBar(searchText: $searchText)
+                    Button(action: {
+                        showingPicker = true
+                    }) {
+                        Image(systemName: "slider.horizontal.3")
+                            .padding(.horizontal, 2)
+                            .foregroundColor(.gray)
+                    }
+                    Button(action: {
+                        showingPicker = true
+                    }) {
+                        Image(systemName: "arrow.up.arrow.down.square.fill")
+                            .padding(.horizontal, 2)
+                            .foregroundColor(.gray)
+                    }
+                }
+                .padding(.horizontal, 2)
+                ScrollView {
+                    LazyVGrid(columns: [GridItem(.flexible()), GridItem(.flexible())], alignment: .center, spacing: 10) {
+                        if let movieList = movieListViewModel.movieListResponse?.movies {
+                            ForEach(0..<(movieList.count), id: \.self) { index in
+                                let movie = movieList[index]
+                                //    yearList.append(movie.year ?? "")
+                                MovieCard(movie: movie)
+                            }
                         }
                     }
                 }
+                
+                .onChange(of: searchText) { newValue in
+                    DispatchQueue.main.asyncAfter(deadline: .now() + 1) {
+                        movieListViewModel.getMovieList(searchText: newValue, year: year, page: 1 , type: type)
+                    }
+                }
+                
+                .onChange(of: year) { newValue in
+                    DispatchQueue.main.asyncAfter(deadline: .now() + 1) {
+                        movieListViewModel.getMovieList(searchText: searchText, year: year, page: 1 , type: type)
+                    }
+                }
+                
+                .onChange(of: type) { newValue in
+                    DispatchQueue.main.asyncAfter(deadline: .now() + 1) {
+                        movieListViewModel.getMovieList(searchText: searchText, year: year, page: 1 , type: newValue)
+                    }
+                }
+                
+                .onAppear(){
+                    movieListViewModel.getMovieList(searchText: "love", year: year, page: 1 , type: type)
+                }
             }
-            .navigationTitle(type)
-            .onAppear(){
-                movieListViewModel.getMovieList(searchText: "Ali", page: 1 , type: type)
+            .sheet(isPresented: $showingPicker) {
+                PickerView(years: yearList)
+            }
+        }
+        .navigationBarBackButtonHidden(true)
+    }
+}
+
+struct PickerView: View {
+    @State private var selectedYear = ""
+    let years: [String]
+
+    var body: some View {
+        Form {
+            Picker("Select a year", selection: $selectedYear) {
+                ForEach(years, id: \.self) { year in
+                    Text(year).tag(year)
+                }
             }
         }
     }
